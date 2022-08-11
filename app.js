@@ -34,6 +34,7 @@ app.use("/address", addressRoute);
 // app.use("/cart", cartRoute);
 app.use("/order", orderRoute);
 app.use("/razorpay", razorPay);
+app.use(express.static("routes"));
 
 app.get("/", (req, res) => {
   res.send("API IS NOW UP & RUNNING");
